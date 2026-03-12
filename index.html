@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuickTech Tips</title>
+  <style>
+    /* Reset dan font */
+    * {margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif;}
+    body {line-height: 1.6; background: #f5f5f5; color: #333; scroll-behavior: smooth;}
+
+    /* Header / Hero */
+    header {
+      background: #0078d4;
+      color: #fff;
+      text-align: center;
+      padding: 100px 20px;
+      position: relative;
+      overflow: hidden;
+    }
+    header h1 {font-size: 3em; margin-bottom: 10px; animation: fadeInDown 1s;}
+    header p {font-size: 1.3em; margin-bottom: 20px; animation: fadeInUp 1s;}
+    header a.button {
+      background: #fff; color: #0078d4; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; transition: 0.3s;
+      animation: fadeIn 2s;
+    }
+    header a.button:hover {background: #e1e1e1;}
+
+    /* Animations */
+    @keyframes fadeIn {from {opacity: 0;} to {opacity: 1;}}
+    @keyframes fadeInDown {from {opacity:0; transform:translateY(-30px);} to {opacity:1; transform:translateY(0);}}
+    @keyframes fadeInUp {from {opacity:0; transform:translateY(30px);} to {opacity:1; transform:translateY(0);}}
+
+    /* Section styling */
+    section {padding: 60px 20px; max-width: 1000px; margin: auto;}
+    section h2 {text-align: center; margin-bottom: 40px; color: #0078d4; opacity:0; transition: opacity 1s ease-in-out;}
+    section.visible h2 {opacity:1;}
+
+    /* About section */
+    #about p {text-align: center; font-size: 1.1em; opacity:0; transition: opacity 1s ease-in-out;}
+    #about.visible p {opacity:1;}
+
+    /* Reels list */
+    #reels ul {list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;}
+    #reels li {background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; opacity:0;}
+    #reels li.visible {opacity:1; transform: translateY(0);}
+    #reels li:hover {transform: translateY(-5px); box-shadow: 0 6px 12px rgba(0,0,0,0.2);}
+    #reels li a {text-decoration: none; color: #0078d4; font-weight: bold; display: block; margin-top: 10px; transition: color 0.3s;}
+    #reels li a:hover {color: #005a9e;}
+    #reels li p {font-size: 0.95em; color: #555;}
+
+    /* Tips section */
+    #tips .tip {background: #fff; padding: 20px; margin-bottom: 20px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); opacity:0; transition: opacity 1s ease-in-out, transform 0.5s;}
+    #tips .tip.visible {opacity:1; transform: translateY(0);}
+
+    /* Contact / Follow */
+    #contact {text-align: center; padding-bottom: 80px;}
+    #contact a {display: inline-block; margin: 10px; text-decoration: none; color: #fff; background: #0078d4; padding: 12px 25px; border-radius: 5px; transition: 0.3s, transform 0.3s;}
+    #contact a:hover {background: #005a9e; transform: scale(1.05);}
+
+    /* Footer */
+    footer {text-align: center; padding: 20px; background: #333; color: #fff;}
+  </style>
+</head>
+<body>
+
+  <!-- Header / Hero -->
+  <header>
+    <h1>QuickTech Tips</h1>
+    <p>Tips Teknologi Cepat & Mudah</p>
+    <a href="#reels" class="button">Tonton Reels Terbaru</a>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>Tentang Kami</h2>
+    <p>QuickTech Tips hadir untuk memberikan tips teknologi singkat, tutorial gadget, dan trik aplikasi yang mudah dipahami. Temukan video Reels terbaru dan tips praktis untuk sehari-hari.</p>
+  </section>
+
+  <!-- Reels Section -->
+  <section id="reels">
+    <h2>Daftar Reels</h2>
+    <ul>
+      <li><strong>Screenshot Panjang Android</strong><p>Trik screenshot panjang hanya dalam 3 detik!</p><a href="https://www.facebook.com/YourPageName/videos/1" target="_blank">Tonton</a></li>
+      <li><strong>Hapus Cache Cepat</strong><p>Biar HP ngebut, hapus cache rutin!</p><a href="https://www.facebook.com/YourPageName/videos/2" target="_blank">Tonton</a></li>
+      <li><strong>Aplikasi Edit Foto Gratis</strong><p>Edit foto keren tanpa bayar!</p><a href="https://www.facebook.com/YourPageName/videos/3" target="_blank">Tonton</a></li>
+      <li><strong>Shortcut Keyboard Windows</strong><p>Kerja di PC jadi lebih cepat!</p><a href="https://www.facebook.com/YourPageName/videos/4" target="_blank">Tonton</a></li>
+      <li><strong>Hemat Baterai iPhone</strong><p>Tips biar baterai awet seharian!</p><a href="https://www.facebook.com/YourPageName/videos/5" target="_blank">Tonton</a></li>
+    </ul>
+  </section>
+
+  <!-- Tips Section -->
+  <section id="tips">
+    <h2>Tips Singkat</h2>
+    <div class="tip"><strong>Backup Data Google Drive</strong><p>Pastikan data penting tidak hilang dengan backup rutin di Google Drive.</p></div>
+    <div class="tip"><strong>Temukan Aplikasi Tersembunyi</strong><p>Cara cepat menemukan aplikasi yang tersembunyi di HP Android dan iPhone.</p></div>
+    <div class="tip"><strong>Subtitle Otomatis Video</strong><p>Bikin subtitle otomatis untuk video hanya dalam 1 menit.</p></div>
+  </section>
+
+  <!-- Contact / Follow Section -->
+  <section id="contact">
+    <h2>Follow Kami</h2>
+    <a href="https://www.facebook.com/YourPageName" target="_blank">Facebook</a>
+    <a href="https://www.instagram.com/YourInstagram" target="_blank">Instagram</a>
+    <a href="https://www.youtube.com/YourChannel" target="_blank">YouTube</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2026 QuickTech Tips. All rights reserved.
+  </footer>
+
+  <!-- Animasi Scroll JS -->
+  <script>
+    const sections = document.querySelectorAll('section, #reels li, #tips .tip');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {threshold: 0.1});
+    sections.forEach(section => observer.observe(section));
+  </script>
+</body>
+</html>
