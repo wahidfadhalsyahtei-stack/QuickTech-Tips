@@ -1,7 +1,7 @@
 <svg width="500" height="150" viewBox="0 0 500 150" xmlns="http://www.w3.org/2000/svg">
   <style>
     .title { font: bold 40px Arial, sans-serif; fill:#0078d4; }
-    .subtitle { font: 16px Arial, sans-serif; fill:#555; }
+    .subtitle { font: 15px Arial, sans-serif; fill:#555; }
   </style>
 
   <!-- Icon background circle -->
@@ -13,8 +13,10 @@
 
   <!-- Brand text -->
   <text x="110" y="85" class="title">QuickTech</text>
+  <text x="110" y="90" class="title">Tips Teknologi Cepat & Mudah</text>
 
 </svg>
+
 
 
 
