@@ -1,6 +1,6 @@
 <svg width="500" height="150" viewBox="0 0 500 150" xmlns="http://www.w3.org/2000/svg">
   <style>
-    .title { font: bold 36px Arial, sans-serif; fill:#0078d4; }
+    .title { font: bold 40px Arial, sans-serif; fill:#0078d4; }
     .subtitle { font: 16px Arial, sans-serif; fill:#555; }
   </style>
 
@@ -9,9 +9,9 @@
 
   <!-- Lightning bolt (tech speed icon) -->
   <polygon points="55,35 75,35 65,65 85,65 45,115 55,80 35,80"
-           fill="#ffffff"/>
+           fill="#FFD700"/>
 
   <!-- Brand text -->
   <text x="120" y="70" class="title">QuickTech</text>
-  <text x="120" y="100" class="subtitle">Tips</text>
+
 </svg>
