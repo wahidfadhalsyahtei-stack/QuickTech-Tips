@@ -12,8 +12,9 @@
            fill="#FFD700"/>
 
   <!-- Brand text -->
-  <text x="120" y="100" class="title">QuickTech</text>
+  <text x="120" y="85" class="title">QuickTech</text>
 
 </svg>
+
 
 
